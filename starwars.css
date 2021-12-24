@@ -1,0 +1,292 @@
+/* Header */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Padauk", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+h1 {
+  padding: 0;
+  margin: 0;
+}
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #333;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+#large-header {
+  background-image: url("https://bit.ly/3mrHh1d");
+}
+.headMain {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  width: 45%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: rgba(99, 98, 98, 0.2);
+  padding: 8px;
+  border-radius: 10px;
+}
+.main-title {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  gap: 10px;
+  /* padding: 5px; */
+  border-radius: 10px;
+}
+.main-title > input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  padding: 20px;
+}
+.main-title > input:focus {
+  outline: none;
+}
+.main-title > input::placeholder {
+  font-size: 18px;
+  color: #fff;
+}
+.main-title > div {
+  width: 70px;
+  height: 100%;
+  display: flex;
+  border-radius: 10px;
+  background-color: rgb(233, 15, 15);
+  justify-content: center;
+  align-items: center;
+}
+.main-title > div > img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .demo-1 .main-title {
+    font-size: 3em;
+  }
+}
+
+.marvelLogo {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  width: 30%;
+  height: 250px;
+}
+.marvelLogo > img {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  padding: 5px;
+  max-height: 300px;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #737272;
+}
+.mainDiv {
+  height: 50px;
+  width: 95%;
+  border-radius: 10px;
+  margin: auto;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  border-top: 1px dotted white;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+}
+.mainDiv:hover {
+  background: rgba(153, 151, 151, 0.1);
+}
+.mainDiv > p img {
+  cursor: pointer;
+}
+.mainDiv > div {
+  width: 60px;
+  height: 100%;
+}
+.mainDiv > div > img {
+  object-fit: contain;
+  width: 70px;
+  height: 50px;
+}
+
+.overflowDiv {
+  position: absolute;
+  display: none;
+  top: 50%;
+  z-index: 100;
+  background: rgba(116, 114, 114, 0.9);
+  border-radius: 10px;
+  width: 50%;
+  height: 67vh;
+  left: 50%;
+  padding: 20px;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  color: white;
+}
+.crossBtn {
+  color: white;
+  float: right;
+  cursor: pointer;
+}
+
+.floatImgDiv {
+  width: 200px;
+  border-radius: 10px;
+  position: relative;
+  top: 20px;
+  /* overflow: hidden; */
+}
+.floatImgDiv > img {
+  width: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.divOne {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+}
+h1 {
+  margin-top: 20px;
+}
+p {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.detailsDiv {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  flex-direction: column;
+  /* background-color: rebeccapurple; */
+  text-align: left;
+}
+
+.detailsFloat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.Divbottom {
+  background-color: #202124;
+  border-radius: 8px;
+  color: #e4e5e7;
+  height: 100px;
+  position: relative;
+  top:50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0px 0px 8px;
+  align-items: center;
+}
+
+.bottomFloat{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.bottomFloat > p{
+    font-size: 22px;
+    font-weight: 800;
+}
+.redHead{
+    font-size: 16px !important;
+    color: red;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        height: 100vh;
+    }
+    .floatImgDiv{
+        margin: auto;
+        height: 120px;
+    }
+    .floatImgDiv >img{
+        height: 220px;
+    }
+    #forHidden{
+        display: none;
+    }
+    .headMain{
+        width: 90%;
+    }
+    .marvelLogo{
+        width: 90%;
+    }
+    .overflowDiv{
+        width: 80%;
+        height: 90vh;
+        padding-bottom: 30px;
+    }
+    .detailsDiv{
+        margin-bottom: 30px;
+    }
+    .divOne{
+        flex-direction: column;
+    }
+    .Divbottom{
+        height: auto;
+        top:0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .detailsDiv{
+        margin-top: 70px;
+    }
+  }

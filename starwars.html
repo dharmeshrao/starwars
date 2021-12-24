@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./starwars.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito+Sans:wght@300;400;600;700;800&family=Padauk:wght@400;700&family=Red+Hat+Display:wght@300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="large-header" class="large-header">
+      <canvas id="demo-canvas"></canvas>
+      <div class="marvelLogo">
+        <img class="marvelLogo" src="./images/marvel.jpg" alt="" />
+      </div>
+      <div class="headMain">
+        <div class="main-title">
+          <input
+            type="text"
+            placeholder="Search here..."
+            oninput="debounce(main,400)"
+          />
+          <div>
+            <img src="./images/211885_search_icon.svg" alt="" />
+          </div>
+        </div>
+        <div id="cont" class="container"></div>
+      </div>
+    </div>
+    <div id="over" class="overflowDiv">
+      <i
+        onclick="handleCross('dharmesh')"
+        class="fa fa-times crossBtn"
+        aria-hidden="true"
+      ></i>
+      <div style="float: none"></div>
+      <div class="divOne">
+        <div class="floatImgDiv">
+          <img
+          id="mainImg"
+            src=""
+            alt=""
+          />
+        </div>
+        <div class="detailsDiv">
+          <h1 id="fullName" class="Name"></h1>
+          <div class="detailsFloat">
+            <p class="redHead">gender</p>
+            <p id="gender"></p>
+          </div>
+          <div class="detailsFloat">
+            <p class="redHead">race</p>
+            <p id="race"></p>
+          </div>
+          <div class="detailsFloat">
+            <p class="redHead">height</p>
+            <p id="height"></p>
+          </div>
+          <div class="detailsFloat">
+            <p class="redHead">weight</p>
+            <p id="weight"></p>
+          </div>
+          <div class="detailsFloat">
+            <p class="redHead">biography</p>
+            <p id="eye"></p>
+          </div>
+        </div>
+      </div>
+      <div class="Divbottom">
+        <div class="bottomFloat">
+          <p class="redHead">intelligence</p>
+          <p id="intell"></p>
+        </div>
+        <div class="bottomFloat">
+          <p class="redHead">strength</p>
+          <p id="strength"></p>
+        </div>
+        <div id="forHidden" class="bottomFloat">
+          <p class="redHead">speed</p>
+          <p id="speed"></p>
+        </div>
+        <div class="bottomFloat">
+          <p class="redHead">durability</p>
+          <p id="durability"></p>
+        </div>
+        <div class="bottomFloat">
+          <p class="redHead">power</p>
+          <p id="power"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./starwars.js"></script>
